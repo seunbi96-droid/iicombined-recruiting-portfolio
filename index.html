@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>송은비 포트폴리오 | 아이아이컴바인드 Recruiting Coordinator</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root { --bg:#f6f6f5; --surface:#fff; --ink:#1f1f1f; --muted:#6a6a6a; --line:#d6d6d3; --accent:#262626; --accent-soft:#ececea; --font:"IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif; color-scheme: light; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg:#161616; --surface:#202020; --ink:#f0f0ee; --muted:#a8a8a4; --line:#333; --accent:#e8e8e4; --accent-soft:#2c2c2a; color-scheme: dark; } }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin:0; background:var(--bg); color:var(--ink); font-family:var(--font); line-height:1.65; font-size:15px; }
+.wrap { max-width:880px; margin:0 auto; padding:32px 16px 96px; display:flex; flex-direction:column; gap:36px; }
+header { display:flex; flex-direction:column; gap:10px; }
+.target { align-self:flex-start; font-size:11.5px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--bg); background:var(--accent); padding:5px 12px; border-radius:0; }
+h1 { margin:0; font-size:30px; line-height:1.25; letter-spacing:-.01em; padding-bottom:14px; border-bottom:2px solid var(--accent); }
+.one { margin:10px 0 2px; font-size:17px; font-weight:600; line-height:1.5; border-left:3px solid var(--accent); padding-left:14px; }
+@media (min-width:900px) { .one { font-size:15px; } }
+.lede { margin:0; color:var(--muted); max-width:80ch; }
+h2 { margin:0; font-size:15px; letter-spacing:.06em; text-transform:uppercase; padding-bottom:8px; border-bottom:1px solid var(--accent); }
+.sec-head { margin-bottom:12px; }
+.filters { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:12px; }
+.filters button { font:inherit; font-size:12.5px; font-weight:600; letter-spacing:.02em; padding:7px 14px; border-radius:0; border:1px solid var(--line); background:var(--surface); color:var(--ink); cursor:pointer; }
+.filters button[aria-pressed="true"] { background:var(--accent); border-color:var(--accent); color:var(--bg); }
+button:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
+.matrix { background:var(--surface); border:1px solid var(--line); border-top:2px solid var(--accent); border-radius:0; overflow:hidden; }
+.row { display:grid; grid-template-columns:64px 1fr auto; gap:14px; align-items:start; padding:12px 16px; border-top:1px solid var(--line); }
+.row:first-child { border-top:0; }
+.row[hidden] { display:none; }
+.cat { font-size:12px; font-weight:700; color:var(--muted); padding-top:2px; }
+.req { font-size:14.5px; }
+.pick { margin-top:14px; display:flex; flex-wrap:wrap; gap:8px; align-items:center; }
+.pick-label { font-size:13px; font-weight:700; color:var(--muted); }
+details.more { border:1px dashed var(--line); border-radius:0; padding:4px 14px 14px; }
+details.more > summary { cursor:pointer; font-weight:700; padding:12px 0; color:var(--accent); }
+details.more[open] > summary { margin-bottom:8px; }
+details.more .cases-inner { display:flex; flex-direction:column; gap:16px; }
+.chips { display:flex; gap:6px; flex-wrap:wrap; justify-content:flex-end; }
+.chip { font:inherit; font-size:12.5px; font-weight:600; padding:3px 10px; border-radius:0; border:1px solid var(--accent); background:var(--accent-soft); color:var(--accent); cursor:pointer; }
+.chip:hover { background:var(--accent); color:var(--bg); }
+.cases { display:flex; flex-direction:column; gap:16px; }
+article { background:var(--surface); border:1px solid var(--line); border-top:2px solid var(--accent); border-radius:0; padding:18px 20px; display:flex; flex-direction:column; gap:10px; scroll-margin-top:16px; }
+article h3 { margin:0; font-size:17px; text-wrap:balance; }
+.meta { font-size:12.5px; color:var(--muted); }
+.tags { display:flex; gap:6px; flex-wrap:wrap; }
+.tag { font-size:11.5px; padding:2px 8px; border-radius:0; background:var(--accent-soft); color:var(--accent); font-weight:600; }
+dl { margin:0; display:grid; grid-template-columns:72px 1fr; gap:8px 12px; }
+dt { font-size:12.5px; font-weight:700; color:var(--muted); padding-top:2px; }
+dd { margin:0; }
+footer { font-size:12.5px; color:var(--muted); border-top:1px solid var(--line); padding-top:16px; }
+.home { position:fixed; right:16px; bottom:16px; z-index:10; font:inherit; font-size:13px; font-weight:600; cursor:pointer; padding:10px 16px; border-radius:0; background:var(--surface); color:var(--accent); border:1px solid var(--accent);  }
+@media (max-width:600px) { .row { grid-template-columns:1fr; gap:6px; } .chips { justify-content:flex-start; } dl { grid-template-columns:1fr; gap:2px; } dd { margin-bottom:8px; } h1 { font-size:25px; } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior:auto; } }
+</style>
+</head>
+<body>
+<div class="wrap" id="top">
+<header>
+  <span class="target">아이아이컴바인드 Recruiting Coordinator 지원</span>
+  <h1>송은비 포트폴리오</h1>
+  <p class="one">지원자가 회사를 처음 만나는 순간부터 입사 후 적응까지를 한 사람의 경험으로 보고, 끊기지 않게 운영합니다.<br>해외로 넓어지는 브랜드 회사에서 그 경험을 설계하고 싶습니다.</p>
+  <p class="lede">공고의 요건마다 제가 실제로 한 일을 연결했습니다.<br>
+신입생 모집부터 온보딩까지 전 과정을 직접 운영하고, 신입생 의견을 들어 세미나를 다시 설계했습니다.<br>
+급여 데이터 24개월치를 끝까지 대조해 차액을 추적했고,<br>
+담당자가 없던 업무에는 양식과 체계를 먼저 만들었습니다.</p>
+</header>
+<section aria-labelledby="matrix-title">
+  <div class="sec-head"><h2 id="matrix-title">공고 요건과 근거 사례</h2></div>
+  <div class="filters" role="group" aria-label="요건 구분">
+    <button type="button" data-filter="all" aria-pressed="true">전체</button>
+    <button type="button" data-filter="주요업무" aria-pressed="false">주요업무</button>
+    <button type="button" data-filter="우대" aria-pressed="false">우대사항</button>
+    <button type="button" data-filter="자격요건" aria-pressed="false">자격요건</button>
+  </div>
+  <div class="matrix">
+<div class="row" data-cat="주요업무"><span class="cat">주요업무</span><span class="req">일정 조율·서류 접수·장소 섭외 등 선발 운영 (대학원 신입생 선발)</span><span class="chips"><button class="chip" data-go="case-1">사례 1</button></span></div><div class="row" data-cat="주요업무"><span class="cat">주요업무</span><span class="req">신규 입사자 온보딩 기획·진행</span><span class="chips"><button class="chip" data-go="case-2">사례 2</button></span></div><div class="row" data-cat="주요업무"><span class="cat">주요업무</span><span class="req">구성원 경험 (구성원 의견을 듣고 설계)</span><span class="chips"><button class="chip" data-go="case-2">사례 2</button></span></div><div class="row" data-cat="우대"><span class="cat">우대</span><span class="req">영문 문서 작성 (비즈니스 영어)</span><span class="chips"><button class="chip" data-go="case-5">사례 5</button></span></div><div class="row" data-cat="우대"><span class="cat">우대</span><span class="req">HRIS(SAP) 사용 (급여 지급·명세서 발급)</span><span class="chips"><button class="chip" data-go="case-3">사례 3</button><button class="chip" data-go="case-6">사례 6</button></span></div><div class="row" data-cat="우대"><span class="cat">우대</span><span class="req">채용·노동 관련 법률 (4대보험·원천세 신고, 계약서 관리 실무)</span><span class="chips"><button class="chip" data-go="case-5">사례 5</button><button class="chip" data-go="case-6">사례 6</button></span></div><div class="row" data-cat="우대"><span class="cat">우대</span><span class="req">온보딩 교육 (HRD)</span><span class="chips"><button class="chip" data-go="case-2">사례 2</button></span></div><div class="row" data-cat="우대"><span class="cat">우대</span><span class="req">HR 데이터를 다뤄본 경험</span><span class="chips"><button class="chip" data-go="case-3">사례 3</button></span></div><div class="row" data-cat="우대"><span class="cat">우대</span><span class="req">AI를 업무에 활용해 일하는 방식을 바꿔 본 경험</span><span class="chips"><button class="chip" data-go="case-4">사례 4</button></span></div>
+<div class="row" data-cat="자격요건"><span class="cat">자격요건</span><span class="req">팀워크·커뮤니케이션 (지원자·교수진·재학생과의 소통)</span><span class="chips"><button class="chip" data-go="case-1">사례 1</button><button class="chip" data-go="case-2">사례 2</button></span></div>
+  </div>
+</section>
+<section aria-labelledby="cases-title">
+  <div class="sec-head"><h2 id="cases-title">근거 사례</h2></div>
+  <div class="cases">
+<article id="case-1"><h3>사례 1. 신입생 모집 과정 전체를 운영했습니다</h3><div class="meta">서울대학교 여성학협동과정 행정실 · 학과 전임조교 · 2023.03 ~ 2024.02</div><div class="tags"><span class="tag">선발 운영</span><span class="tag">일정·서류 조율</span></div><dl><dt>관점</dt><dd>지원자가 설명회를 거쳐 입학하고 적응하기까지를 한 사람의 경험으로 보았습니다.</dd><dt>한 일</dt><dd>입시설명회를 기획·운영하고, 지원 서류 접수·관리, 면접 안내, 심사 일정 조율, 면접위원 3명 조율(외부 교수 섭외 포함), 최종 등록 안내까지 이어서 맡았습니다.</dd><dt>방식</dt><dd>지원자 안내는 메일을 우선하고, 우편 서류가 도착하지 않으면 먼저 전화로 확인했습니다. 면접날 다과에는 지원자 성향을 고려해 비건 옵션을 넣었습니다.</dd><dt>결과</dt><dd>합격자 전원이 등록했고, 일정 차질 없이 마쳤습니다.</dd></dl></article>
+<article id="case-2"><h3>사례 2. 신입생 설문·면담을 반영해 온보딩 세미나를 재설계했습니다</h3><div class="meta">서울대학교 여성학협동과정 행정실 · 학과 전임조교 · 2023.03 ~ 2024.02</div><div class="tags"><span class="tag">온보딩</span><span class="tag">구성원 경험</span></div><dl><dt>문제</dt><dd>개념·주제 중심이던 세미나가 신입생이 실제로 궁금해하는 것을 다루고 있는지 확인이 필요했습니다.</dd><dt>한 일</dt><dd>OT에서 관심 주제를 묻고 세미나 직전 설문과 면담으로 필요를 확인했습니다. 이슈페이퍼·발제문 작성법 같은 실무 스킬 수요를 확인해, 재학생도 참여하는 오픈 특별세미나로 직접 기획했습니다. 이슈페이퍼 작성이 많은 학기 중인 석사생을 강사로 모집해 운영했습니다.</dd><dt>결과</dt><dd>열 명 이상이 참석했습니다. 신입생 4명 예상이 석사생까지 넓어졌습니다.</dd><dt>배운 점</dt><dd>구성원에게 필요한 것을 먼저 듣고 설계하면 대상과 규모가 예상보다 넓어질 수 있다는 점입니다.</dd></dl></article>
+<article id="case-3"><h3>사례 3. 급여 데이터 24개월을 대조해 예수금 계좌 차액을 추적했습니다</h3><div class="meta">서울대학교 생활과학대학 행정실 · 회계 담당자 · 분석 기간 2024.03 ~ 2026.03</div><div class="tags"><span class="tag">HR 데이터</span><span class="tag">문제 발견</span><span class="tag">SAP·Excel</span></div><dl><dt>문제</dt><dd>전임자 때부터 쌓여 온 단시간 근로자 예수금에서 공제액과 납부액 사이 약 400만원 차액이 남아 있었습니다.</dd><dt>한 일</dt><dd>전임자 담당 기간을 포함해 월 평균 4건, 약 24개월치 급여 데이터를 공제액·납부액 기준으로 비교하는 엑셀을 만들어 건별로 대조했습니다.</dd><dt>결과</dt><dd>260만원은 원인을 규명해 재직자·퇴사자 모두에게 환급했습니다. 140만원은 전 단과대학이 함께 쓰는 통장 구조라 단독 규명이 어려워 분석 자료와 함께 인수인계했습니다.</dd><dt>배운 점</dt><dd>숫자가 맞지 않을 때 원본 데이터까지 내려가 원인을 정의하고, 이어받는 사람이 같은 기준으로 볼 수 있게 남기는 일입니다.</dd></dl></article>
+<article id="case-4"><h3>사례 4. 휴가 입력과 법인카드 분류에 AI를 붙여 일하는 방식을 바꿨습니다</h3><div class="meta">씨티씨바이오 경영기획실 · 사원 · 2026.05 ~ 현재</div><div class="tags"><span class="tag">AI 활용</span><span class="tag">업무 방식 개선</span></div><dl><dt>휴가 입력</dt><dd>이전에는 휴가 신청이 올 때마다 확인해 부서 캘린더에 직접 입력했습니다. 지금은 AI가 매일 점심시간에 결재가 끝난 휴가를 확인해 캘린더에 입력합니다.</dd><dt>법인카드</dt><dd>이전에는 카드사에서 월별 매출전표를 받아 엑셀로 가공하고 계정과목을 일일이 분류한 뒤 전표를 입력했습니다. 지금은 AI가 계정과목 분류까지 맡고, 저는 분류 결과를 한 번 검토합니다. 지급전표 입력은 직접 합니다.</dd></dl></article>
+<article id="case-5"><h3>사례 5. 전사 계약서 전수조사에 참여하고 영문 표준양식 초안을 만들었습니다</h3><div class="meta">씨티씨바이오 경영기획실 · 사원 · 2026.05 ~ 현재</div><div class="tags"><span class="tag">계약서 관리</span><span class="tag">영문 문서</span><span class="tag">AI 활용</span></div><dl><dt>한 일</dt><dd>전사 계약서 전수조사(선임 주도)에 참여해 해외 계약서 약 330건을 실물·스캔본과 대조하고 통합 대장에 반영했습니다. 날인, 원본 보관, 문의 창구도 맡고 있습니다.</dd><dt>방식</dt><dd>협회 표준 계약서를 바탕으로 당사 입장(공급자 기준)에 맞게 AI로 초안을 만들고, 조항별로 직접 검토해 채택 여부를 정했습니다.</dd><dt>결과</dt><dd>영문 표준양식 4종 초안을 완성했습니다. 법률 전문가 검토 후 배포 예정입니다.</dd></dl></article>
+<article id="case-6"><h3>사례 6. 담당자가 없던 원천세·4대보험 신고 업무를 맡아 양식과 일정 체계를 만들었습니다</h3><div class="meta">서울대학교 생활과학대학 행정실 · 회계 담당자 · 2025.04 ~ 2026.05</div><div class="tags"><span class="tag">HR 운영</span><span class="tag">직접 구축</span><span class="tag">SAP</span></div><dl><dt>문제</dt><dd>원천세·4대보험 신고 담당자 자리가 비어 기한을 놓치면 가산세 등이 생길 수 있는 상황이었습니다.</dd><dt>한 일</dt><dd>맡을 사람이 정해지지 않아 직접 인수해 입력 양식·체크리스트·일정 관리표를 만들고 업무 매뉴얼로 정리했습니다. 급여 지급·명세서 발급(SAP)과 4대보험 취득·상실·정산 신고도 함께 운영했습니다.</dd><dt>결과</dt><dd>1년간 원천세·4대보험 신고를 오류 없이 기한 내에 마쳤습니다.</dd></dl></article>
+</div>
+</section>
+</div>
+<button class="home" type="button" id="home" aria-label="맨 위로 이동">맨 위로</button>
+<script>
+(function () {
+  var buttons = document.querySelectorAll('.filters button');
+  var rows = document.querySelectorAll('.row');
+  function apply(f) {
+    buttons.forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.filter === f ? 'true' : 'false'); });
+    rows.forEach(function (r) { r.hidden = !(f === 'all' || r.dataset.cat === f); });
+  }
+  buttons.forEach(function (b) { b.addEventListener('click', function () { apply(b.dataset.filter); }); });
+  document.querySelectorAll('[data-go]').forEach(function (c) {
+    c.addEventListener('click', function () {
+      var t = document.getElementById(c.dataset.go);
+      var d = t && t.closest('details'); if (d) d.open = true;
+      if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+  document.getElementById('home').addEventListener('click', function () {
+    var t = document.getElementById('top');
+    if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+})();
+</script>
+</body>
+</html>
